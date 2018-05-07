@@ -1,27 +1,145 @@
-#team {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%); }
-  #team img {
-    width: 150px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
-  #team h1 {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    color: rgba(0, 0, 0, 0.7); }
-  #team h2 {
-    font-size: 17px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.6); }
-  #team a {
-    color: rgba(0, 0, 0, 0.25);
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    font-size: 15px; }
-  #team .fa-heart {
-    color: #D23333; }
+/*
+Error: Undefined variable: "$my-body-font".
+        on line 8 of /home/daniel/code/KillerD4n/middleman-airbnb/source/stylesheets/pages/team.scss
+
+3:   display: flex;
+4:   align-items: center;
+5:   justify-content: space-around;
+6:   text-align: center;
+7:   background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
+8:   font-family: $my-body-font;
+9: 
+10:   img {
+11:     width: 150px;
+12:     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+13:   }
+
+Backtrace:
+/home/daniel/code/KillerD4n/middleman-airbnb/source/stylesheets/pages/team.scss:8
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/tilt-2.0.8/lib/tilt/template.rb:109:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:184:in `_render_with_all_renderers'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:147:in `block in render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7/lib/active_support/notifications.rb:166:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:146:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/sitemap/resource.rb:154:in `render'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:112:in `process_request'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:66:in `block in call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `catch'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/urlmap.rb:68:in `block in call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/urlmap.rb:53:in `each'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/urlmap.rb:53:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_javascript.rb:55:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_css.rb:63:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-autoprefixer-2.9.0/lib/middleman-autoprefixer/extension.rb:48:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/core_extensions/inline_url_rewriter.rb:74:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/head.rb:12:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/lint.rb:49:in `_call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/lint.rb:37:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/builder.rb:153:in `call'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/mock.rb:74:in `request'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/rack-2.0.5/lib/rack/mock.rb:56:in `get'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:232:in `block in output_resource'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7/lib/active_support/notifications.rb:166:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:225:in `output_resource'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:484:in `call_with_index'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:455:in `process_incoming_jobs'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:437:in `block in worker'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `fork'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `worker'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:419:in `block in create_workers'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each_with_index'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `create_workers'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:358:in `work_in_processes'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/parallel-1.12.1/lib/parallel.rb:264:in `map'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:131:in `output_files'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:71:in `block in run!'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7/lib/active_support/notifications.rb:166:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:70:in `run!'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:80:in `block in build'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7/lib/active_support/notifications.rb:166:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:79:in `build'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `block in invoke_all'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `each'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `map'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `invoke_all'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/group.rb:232:in `dispatch'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:115:in `invoke'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor.rb:40:in `block in register'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+/home/daniel/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
+/home/daniel/.rbenv/versions/2.4.4/bin/middleman:23:in `load'
+/home/daniel/.rbenv/versions/2.4.4/bin/middleman:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$my-body-font\".\A         on line 8 of /home/daniel/code/KillerD4n/middleman-airbnb/source/stylesheets/pages/team.scss\A \A 3:   display: flex;\A 4:   align-items: center;\A 5:   justify-content: space-around;\A 6:   text-align: center;\A 7:   background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);\A 8:   font-family: $my-body-font;\A 9: \A 10:   img {\A 11:     width: 150px;\A 12:     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);\A 13:   }"; }
