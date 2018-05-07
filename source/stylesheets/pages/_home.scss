@@ -1,13 +1,15 @@
 #home {
-  background-color: grey;
+  background-color: $light-gray;
   color: white;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  font-family: $my-headers-font;
   p {
     margin-top: 1.5em;
+    font-family: $my-body-font;
   }
   a {
     color: rgba(0,0,0,0.4);
